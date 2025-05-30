@@ -10,7 +10,7 @@ const MovieCard = ({ movie }) => {
     for (let i = 0; i < 5; i++) {
 
         if (vote > i) {
-            stars.push(<i className="fa-solid fa-star"></i>)
+            stars.push(<i className="fa-solid fa-star text-warning"></i>)
         } else {
             stars.push(<i className="fa-regular fa-star"></i>)
         }
