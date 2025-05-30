@@ -1,5 +1,40 @@
 import React from 'react'
 
+const movies = [
+    {
+        id: 1,
+        title: 'Chi ha incastrato Roger Rabbit',
+        director: 'Robert Zemeckis',
+        releaseDate: 1988,
+        averageVote: 8.9,
+        genre: ['animation, comedy']
+    },
+    {
+        id: 2,
+        title: 'Big Fish',
+        director: 'Tim Burton',
+        releaseDate: 2004,
+        averageVote: 7.8,
+        genre: ['romance, adventure, action, comedy, drama']
+    },
+    {
+        id: 3,
+        title: 'Il postino',
+        director: 'Massimo Troisi',
+        releaseDate: 1994,
+        averageVote: 8.5,
+        genre: ['comedy, drama, romance']
+    },
+    {
+        id: 4,
+        title: 'Le avventure acquatiche di Steve Zissou',
+        director: 'Wes Anderson',
+        releaseDate: 2005,
+        averageVote: 8.5,
+        genre: ['comedy, drama, adventure']
+    }
+]
+
 const Homepage = () => {
     return (
         <>
