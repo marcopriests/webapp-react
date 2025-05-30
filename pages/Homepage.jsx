@@ -1,4 +1,5 @@
 import React from 'react'
+import MovieCard from '../src/components/MovieCard'
 
 const movies = [
     {
@@ -6,7 +7,7 @@ const movies = [
         title: 'Chi ha incastrato Roger Rabbit',
         director: 'Robert Zemeckis',
         releaseDate: 1988,
-        averageVote: 8.9,
+        averageVote: 9.9,
         genre: ['animation, comedy']
     },
     {
@@ -22,7 +23,7 @@ const movies = [
         title: 'Il postino',
         director: 'Massimo Troisi',
         releaseDate: 1994,
-        averageVote: 8.5,
+        averageVote: 6.5,
         genre: ['comedy, drama, romance']
     },
     {
@@ -30,7 +31,7 @@ const movies = [
         title: 'Le avventure acquatiche di Steve Zissou',
         director: 'Wes Anderson',
         releaseDate: 2005,
-        averageVote: 8.5,
+        averageVote: 2.1,
         genre: ['comedy, drama, adventure']
     }
 ]
@@ -42,15 +43,9 @@ const Homepage = () => {
                 <h1><b>Latest movies</b></h1>
                 <div className='container mt-4'>
                     <div className="row">
-                        <div className="col-4 col-md-3 col-lg-2">
-                            <div className="card rounded-0 border-0">
-                                <img src="https://picsum.photos/200/300" alt="" className="card-img-top rounded-0 shadow-sm" />
-                                <div className='mt-2'>
-                                    <div className="fs-6"><b>Titolo film</b></div>
-                                    <div className="">Voto</div>
-                                </div>
-                            </div>
-                        </div>
+                        {movies.map(movie => {
+                            return <MovieCard movie={movie} key={movie.id} />
+                        })}
                     </div>
                 </div>
             </div>
