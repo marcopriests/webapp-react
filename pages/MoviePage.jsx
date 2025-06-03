@@ -72,8 +72,8 @@ const Homepage = () => {
     return (
         <>
             <div className="p-5">
-                <h1><b>Latest movies</b></h1>
-                <div className='container mt-4'>
+                <div className='container'>
+                    <h1 className='mb-4'><b>Latest movies</b></h1>
                     <div className="row">
                         {movies.map(movie => {
                             return <MovieCard movie={movie} key={movie.id} />

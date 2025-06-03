@@ -5,7 +5,7 @@ const MovieDetail = () => {
     const { id } = useParams()
     return (
         <div>
-            dettaglio film
+            dettaglio film {id}
         </div>
     )
 }

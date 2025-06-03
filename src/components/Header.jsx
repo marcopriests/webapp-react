@@ -20,13 +20,9 @@ const Header = () => {
             <div className='logo me-2'>
                 <img className='img-fluid' src="public/duck.png" alt="logo" />
             </div>
-            {links.map(link => {
-                return (
-                    <li className='nav-item' key={link.id}>
-                        <Link className='nav-link text-light me-3' to={link.route}>{link.name}</Link>
-                    </li>
-                )
-            })}
+            <div className='nav-item'>
+                <Link className='nav-link text-light me-3' to='/'>Movies List</Link>
+            </div>
         </div>
     )
 }

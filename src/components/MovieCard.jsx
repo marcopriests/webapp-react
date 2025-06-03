@@ -20,15 +20,15 @@ const MovieCard = ({ movie }) => {
 
     return (
         <div className="col-4 col-md-3 col-lg-2">
-            <div className="card rounded-0 border-0">
-                <Link to={`/movies/${id}`}>
+            <Link className='text-decoration-none' to={`/${id}`}>
+                <div className="card rounded-0 border-0 mb-4">
                     <img src="https://picsum.photos/200/300" alt="" className="card-img-top rounded-0 shadow-sm" />
-                </Link>
-                <div className='mt-2'>
-                    <div className="fs-6"><b>{title}</b></div>
-                    <div className="">{stars}</div>
+                    <div className='mt-2'>
+                        <div className="fs-6"><b>{title}</b></div>
+                        <div className="">{stars}</div>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }
