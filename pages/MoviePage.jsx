@@ -33,6 +33,38 @@ const movies = [
         releaseDate: 2005,
         averageVote: 2.1,
         genre: ['comedy, drama, adventure']
+    },
+    {
+        id: 5,
+        title: 'Chi ha incastrato Roger Rabbit',
+        director: 'Robert Zemeckis',
+        releaseDate: 1988,
+        averageVote: 9.9,
+        genre: ['animation, comedy']
+    },
+    {
+        id: 6,
+        title: 'Big Fish',
+        director: 'Tim Burton',
+        releaseDate: 2004,
+        averageVote: 7.8,
+        genre: ['romance, adventure, action, comedy, drama']
+    },
+    {
+        id: 7,
+        title: 'Il postino',
+        director: 'Massimo Troisi',
+        releaseDate: 1994,
+        averageVote: 6.5,
+        genre: ['comedy, drama, romance']
+    },
+    {
+        id: 8,
+        title: 'Le avventure acquatiche di Steve Zissou',
+        director: 'Wes Anderson',
+        releaseDate: 2005,
+        averageVote: 2.1,
+        genre: ['comedy, drama, adventure']
     }
 ]
 

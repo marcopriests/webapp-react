@@ -1,9 +1,8 @@
 import React from 'react'
-import { Link, useParams } from 'react-router'
+import { Link } from 'react-router'
 
 const MovieCard = ({ movie }) => {
-    const { title, averageVote } = movie
-    const { id } = useParams()
+    const { title, averageVote, id } = movie
 
     const stars = []
 
@@ -22,7 +21,7 @@ const MovieCard = ({ movie }) => {
     return (
         <div className="col-4 col-md-3 col-lg-2">
             <div className="card rounded-0 border-0">
-                <Link to={`${id}`}>
+                <Link to={`/movies/${id}`}>
                     <img src="https://picsum.photos/200/300" alt="" className="card-img-top rounded-0 shadow-sm" />
                 </Link>
                 <div className='mt-2'>
