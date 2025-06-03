@@ -17,12 +17,11 @@ const links = [
 const Header = () => {
     return (
         <div className='bg-dark p-3 d-flex align-items-center'>
-            <div className='logo me-2'>
-                <img className='img-fluid' src="public/duck.png" alt="logo" />
-            </div>
-            <div className='nav-item'>
-                <Link className='nav-link text-light me-3' to='/'>Movies List</Link>
-            </div>
+            <Link className='nav-link text-light ms-3' to='/'>
+                <div className='logo me-2'>
+                    <img className='img-fluid' src="public/duck.png" alt="logo" />
+                </div>
+            </Link>
         </div>
     )
 }
