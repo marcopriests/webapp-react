@@ -12,8 +12,9 @@ function App() {
         <Routes>
           <Route Component={DefaultLayout}>
             <Route index Component={Homepage} />
-            <Route path='/movies' Component={MoviePage}>
-              <Route path='/movies/:id' Component={MovieDetail} />
+            <Route path='/movies'>
+              <Route path='' Component={MoviePage} />
+              <Route path=':id' Component={MovieDetail} />
             </Route>
           </Route>
         </Routes>
