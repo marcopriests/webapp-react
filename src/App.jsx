@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 import DefaultLayout from '../layouts/DefaultLayout'
 import MoviePage from '../pages/MoviePage'
 import MovieDetail from '../pages/MovieDetail'
+import AddMovie from '../pages/AddMovie'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route Component={DefaultLayout}>
             <Route index Component={MoviePage} />
             <Route path=':id' Component={MovieDetail} />
+            <Route path='movies/create' Component={AddMovie} />
           </Route>
         </Routes>
       </BrowserRouter>
