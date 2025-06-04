@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router'
 const initialData = {
     title: '',
     director: '',
+    genre: '',
     image: null,
     abstract: ''
 }
@@ -51,7 +52,11 @@ const AddMovie = () => {
                                     <label htmlFor="">Director</label>
                                     <input type="text" className='form-control' placeholder='Director' name='director' required value={formData.director} onChange={setFieldValue} />
                                 </div>
-                                <div className="col-12 mb-3">
+                                <div className="col-6 mb-3">
+                                    <label htmlFor="">Genre</label>
+                                    <input type="text" className='form-control' placeholder='Genre' name='genre' required value={formData.genre} onChange={setFieldValue} />
+                                </div>
+                                <div className="col-6 mb-3">
                                     <label htmlFor="">Cover image</label>
                                     <input type="file" className='form-control' placeholder='Upload image' name='image' required onChange={setFieldValue} />
                                 </div>

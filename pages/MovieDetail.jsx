@@ -43,6 +43,8 @@ const MovieDetail = () => {
                                         <span className='ms-1'>({movie.reviews.length})</span>
                                     </div>
 
+                                    <span className="badge text-bg-danger mb-5">{movie.genre}</span>
+
                                     <div className=''>{movie.abstract}</div>
 
                                 </div>

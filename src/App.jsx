@@ -4,6 +4,7 @@ import DefaultLayout from '../layouts/DefaultLayout'
 import MoviePage from '../pages/MoviePage'
 import MovieDetail from '../pages/MovieDetail'
 import AddMovie from '../pages/AddMovie'
+import NotFoundPage from '../pages/NotFoundPage'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
             <Route index Component={MoviePage} />
             <Route path=':id' Component={MovieDetail} />
             <Route path='movies/create' Component={AddMovie} />
+            <Route path='*' Component={NotFoundPage} />
           </Route>
         </Routes>
       </BrowserRouter>
