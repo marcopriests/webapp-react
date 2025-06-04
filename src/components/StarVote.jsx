@@ -1,20 +1,19 @@
 import React from 'react'
 
-const StarVote = ({ avgVote }) => {
+const StarVote = ({ vote }) => {
     const stars = []
 
-    const vote = parseInt(avgVote)
+    const starVote = parseInt(vote)
 
     for (let i = 0; i < 5; i++) {
 
-        if (vote > i) {
+        if (starVote > i) {
             stars.push(<i className="fa-solid fa-star text-warning" key={i}></i>)
         } else {
             stars.push(<i className="fa-regular fa-star" key={i}></i>)
         }
     }
 
-    console.log(vote)
     return (
         <div className="">{stars}</div>
     )
