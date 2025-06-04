@@ -74,7 +74,6 @@ const Homepage = () => {
 
     useEffect(() => {
         axios.get('http://127.0.0.1:3000/movies').then(res => {
-            console.log(res.data)
             setMovies(res.data)
         })
     }, [])

@@ -38,7 +38,7 @@ const AddMovie = () => {
             <div className="container p-5">
                 <div className="row">
                     <div className="col-12 mb-3">
-                        <h2>Creazione nuovo film</h2>
+                        <h2 className='fw-semibold'>Add new movie</h2>
                     </div>
                     <div className="col-12">
                         <form onSubmit={handleSubmit}>
